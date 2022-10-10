@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload=displayCards()>
+    <div class="wrapper">
+    <div class="sidebar">
+        <p>MY AWESOME LIBRARY</p>
+        <ul>
+            <li><p>Title</p><textarea id="title"></textarea></li>
+            <li><p>Pages</p><textarea id="pages"></textarea></li>
+            <li><p>Author</p><textarea id="author"></textarea></li>
+            <li><label><input type="checkbox" id="cbox1" value="read"> Read?</label></li>
+            <li><button id="addButton" onclick="addBookToLibrary()">Add</button></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="header">
+            BOOKS
+        </div>
+        <div class="cards">
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+            The Odin Project ❤️
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
