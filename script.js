@@ -1,12 +1,14 @@
-function book(title , author, pages , read){
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-  this.info = function(){
-    return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`
+class book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    this.info = function () {
+      return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`;
+    };
+    this.position = "";
   }
-  this.position = ""
 }
 
 const cards = document.querySelector('.cards');
@@ -40,7 +42,7 @@ function addBookToLibrary() {
 }
 
 
-/**To revome cards before creating anothers */
+/**To remove cards before creating another */
 function removeElementsByClass(className){
   const elements = document.getElementsByClassName(className);
   while(elements.length > 0){
